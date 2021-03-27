@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html> 
   <head>   
+      
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>My Document</title>
-    <script type=text/javascript src="quiz1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+  <script>
+      /*function change() {     
+          var header = document.getElementById("aa");     
+              header.innerHTML = "CSIE@CGU";     
+          var para = document.getElementById("zz");     
+              para.innerHTML = "怎麼那麼棒！！.";   
+      }
+      function myFunction(){
+          var btn = document.createElement("BUTTON");
+              btn.innerHTML = "Change this document";
+              document.body.appendChild(btn)
+              btn.addEventListener("click",change);
+      }*/
+  $(document).ready(function(){
+    $("#button").click(function(){
+      $("#aa").text("CSIE@CGU");
+      $("#zz").text("怎麼那麼棒！！.");
+    });
+  });
+  </script>
   </head> 
   <body>
-    <button onclick="myFunction()" id="tt">Try it</button>
-
+    <input id="button" type="button" value="Change this document.">
     <h1 id="aa">CGU</h1>
     <p id="zz">好棒棒</p>
     </body> 
